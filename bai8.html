@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<input type="text" id="yearOld">
+<input type="button" value="Tìm" onclick="search()"><br>
+<div id="messageDiv"></div>
+<script>
+    let old = ['18','20','30','49','53','100'];
+    let name = ['Nam', 'Linh', 'Trang', 'Long', 'Huyền', 'Hằng'];
+    function search() {
+        let a = document.getElementById("yearOld").value;
+        for (i = 0; i < old.length; i++){
+            if (a === old[i]){
+                document.getElementById("messageDiv").innerHTML = name[i];
+                return;
+            }
+        }
+        alert('Không tìm thấy!');
+    }
+
+</script>
+</body>
+</html>

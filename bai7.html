@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<script>
+    let a = prompt('Biến a: ');
+    let b = prompt('Biến b: ');
+    let c = prompt('Biến c: ');
+    let x1;
+    let x2;
+    let s = ((b * b) - (4 * a * c));
+    if (s < 0){
+        document.write('Phương trình vô nghiệm');
+    } else if (s === 0){
+        x1 = x2 = -b / (2 * a);
+        document.write('Phương trình có nghiệm kép: ' + x1);
+
+    } else if (s > 0){
+        x1 = (-b + Math.sqrt(s)) / (2 * a);
+        x2 = (-b - Math.sqrt(s)) / (2 * a);
+        document.write('Phương trình có 2 nghiệm phân biệt: ' + x1 + ' and '+ x2);
+    }
+</script>
+</body>
+</html>
